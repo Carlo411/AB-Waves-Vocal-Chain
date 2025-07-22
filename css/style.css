@@ -1,21 +1,20 @@
 .ab__button {
-  padding: 12px 24px;       /* mehr Platz für längere Wörter */
-  font-size: 16px;          /* gut lesbare Schriftgröße */
-  white-space: nowrap;      /* verhindert Zeilenumbruch */
   background: #333;
-  color: #f97316;           /* oranger Ton, anpassbar */
-  border: none;
-  border-radius: 8px;
+  color: #E6D2BA;       /* statt vorher Orange jetzt helles Beige */
   font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
   transition: background-color 0.25s ease;
+  white-space: nowrap;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .ab__button:hover:not(:disabled) {
-  background: #f97316;
-  color: #222;
-  box-shadow: 0 6px 14px rgba(249, 115, 22, 0.6);
+  background: #555;
+  color: #E6D2BA;
 }
 
 .ab__button:disabled {
