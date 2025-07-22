@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A/B Audio Player</title>
+  <title>A/B Audio Player - Ein Play Button</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -21,18 +21,15 @@
         <div class="progress__bar progress__fill"></div>
       </div>
 
-      <div class="ab__controls">
-        <button class="ab__button a__button" disabled>Vorher</button>
-        <button class="ab__button b__button" disabled>Nachher</button>
-      </div>
-
-      <div class="play__stop__controls">
+      <div class="controls-container">
         <button class="play__pause__button play__button" disabled>
           <i class="fa-solid fa-play"></i>
         </button>
-        <button class="play__pause__button stop__button" disabled>
-          <i class="fa-solid fa-stop"></i>
-        </button>
+
+        <div class="ab__controls">
+          <button class="ab__button a__button" disabled>Vorher</button>
+          <button class="ab__button b__button" disabled>Nachher</button>
+        </div>
       </div>
     </div>
   </div>
