@@ -1,83 +1,52 @@
-body {
-  background: #121212;
-  font-family: 'Lato', sans-serif;
-  color: #eee;
-  margin: 0;
-  padding: 20px;
-}
-
-.players {
-  max-width: 700px;   /* Breiterer Player */
-  margin: 0 auto;
-}
-
-.player__wrapper {
-  margin-bottom: 30px;
-  height: 160px;      /* Etwas höhere Box */
-}
-
-.progress__container {
-  background: #444;
-  border-radius: 8px;
-  height: 10px;       /* Progressbar etwas höher */
-  cursor: pointer;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.progress__bar.progress__fill {
-  background: #f97316;
-  height: 100%;
-  width: 0%;
-  transition: width 0.25s ease;
-}
-
 .ab__controls {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  justify-content: center;  /* zentral ausrichten */
   margin-bottom: 25px;
 }
 
 .ab__button {
   background: #333;
-  color: #f97316;  /* Orange Schrift */
+  color: #f97316;           /* wirklich orange */
   font-weight: 700;
-  padding: 10px 24px;
-  border-radius: 6px;
-  border: none;
+  padding: 14px 32px;       /* größer */
+  border-radius: 8px;
+  border: 2px solid #f97316;
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease, box-shadow 0.3s ease;
   white-space: nowrap;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  box-shadow: 0 0 12px 2px rgba(249, 115, 22, 0.7); /* orangener Leuchteffekt */
 }
 
 .ab__button:hover:not(:disabled) {
-  background: #555;
-  color: #f97316;
+  background: #f97316;
+  color: #222;
+  box-shadow: 0 0 20px 4px rgba(249, 115, 22, 0.9);
 }
 
 .ab__button:disabled {
   color: #666;
-  cursor: not-allowed;
+  border-color: #666;
   box-shadow: none;
+  cursor: not-allowed;
 }
 
 .play__stop__controls {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   justify-content: center;
 }
 
 .play__pause__button {
   background: #f97316;
   border: none;
-  padding: 18px 30px;
+  padding: 12px 20px;
   border-radius: 50%;
   color: #222;
-  font-size: 26px;
+  font-size: 20px;           /* etwas kleiner */
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(249, 115, 22, 0.7);
+  box-shadow: none;          /* kein Schatten/Leuchten */
   transition: background-color 0.3s ease;
 }
 
