@@ -1,6 +1,45 @@
+body {
+  background: #121212;
+  font-family: 'Lato', sans-serif;
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+}
+
+.players {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.player__wrapper {
+  margin-bottom: 30px;
+}
+
+.progress__container {
+  background: #444;
+  border-radius: 8px;
+  height: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress__bar.progress__fill {
+  background: #f97316;
+  height: 100%;
+  width: 0%;
+  transition: width 0.25s ease;
+}
+
+.ab__controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
 .ab__button {
   background: #333;
-  color: #E6D2BA;       /* statt vorher Orange jetzt helles Beige */
+  color: #E6D2BA; /* Helle Schriftfarbe */
   font-weight: 700;
   padding: 8px 16px;
   border-radius: 6px;
@@ -19,6 +58,34 @@
 
 .ab__button:disabled {
   color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.play__stop__controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.play__pause__button {
+  background: #f97316;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50%;
+  color: #222;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(249, 115, 22, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.play__pause__button:hover:not(:disabled) {
+  background: #fb923c;
+}
+
+.play__pause__button:disabled {
+  background: #bb7700;
   cursor: not-allowed;
   box-shadow: none;
 }
